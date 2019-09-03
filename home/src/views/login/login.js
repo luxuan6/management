@@ -9,8 +9,12 @@ export default class login extends Component {
         let {name,pwd} = this.state;
         return (
             <div>
-                <input type="text" />
-                <input type="text" />
+                <input type="text" value={name} onChange={(e)=>{
+                    console.log(e)
+                }}/>
+                <input type="text" value={pwd} onChange={(e)=>{
+                     console.log(e)
+                }}/>
                 <button>登录</button>
             </div>
         )
